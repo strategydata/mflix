@@ -1,8 +1,8 @@
 <p align="center">
-  <h1 align="center">Roseflix: A Netflix Clone</h1>
-  <img src="./public/images/readme/Main.png" alt="Roseflix Screenshot">
+  <h1 align="center">Roseflix: A Netflix Clone (Backend)</h1>
+  <img src="./readme/Main.png" alt="Roseflix Screenshot">
   <p align="center">
-    My React.js implementation of Netflix. Movie data was pulled from TMDB and trailer videos from Youtube.
+    The server side of my React.js implementation of Netflix. Movie data was pulled from TMDB and trailer videos from Youtube.
     <br /><br />
     <br /><br />
     <a href="https://github.com/strategydata/mflix/issues">Report Bug</a>
@@ -34,10 +34,10 @@
 
 ### Built With
 
-- **[React](https://reactjs.org/)**
-- **[Typescript](https://www.typescriptlang.org/)**
-- [Node.js](https://nodejs.org/en/)
-- [MongoDB](https://www.mongodb.com/)
+- [React](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- **[Node.js](https://nodejs.org/en/)**
+- **[MongoDB](https://www.mongodb.com/)**
 
 ## Getting Started
 
@@ -62,29 +62,26 @@ Install latest version of npm
    ```sh
    npm install
    ```
-3. Create .env file
-4. Request an API key from TMDB and add it to your .env
+3. Create config.env file
+4. Create database at your preferred service (e.g. MongoDB Atlas) and add url to config.env
    ```sh
-   REACT_APP_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+   DATABASE_URL=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
    ```
-5. In a new directory, clone the backend and follow installation instructions on its README
+5. Add your preferred SECRET_KEY and PORT at config.env
    ```sh
-   git clone https://github.com/strategydata/mflix.git
+   PORT=8080
+   SECRET_KEY=xxxxxxxxxxxxxxx
    ```
-6. You should now have the server running locally. Add the url to your .env
+6. Start the application
    ```sh
-   REACT_APP_SERVER_URL=http://localhost:8080
-   ```
-7. Start the application
-   ```sh
-   npm start
+   npm run dev
    ```
 
 ## Usage
 
 **Creating an Account**
 
-![](./public/images/readme/Sign_Up.png)
+![](./readme/Sign_Up.png)
 
 1. Go to Sign Up page.
    - From the homepage, enter your email and click 'Get Started'.
@@ -96,7 +93,7 @@ Install latest version of npm
 
 **Logging In**
 
-![](./public/images/readme/Sign_In.png)
+![](./readme/Sign_In.png)
 
 1. Go to Sign In page.
    - From the homepage, click 'Sign in' button.
@@ -106,7 +103,7 @@ Install latest version of npm
 
 **Searching for a Show**
 
-![](./public/images/readme/Search.png)
+![](./readme/Search.png)
 
 1. Log in and select a profile.
 2. Click the appropriate tab for your search.
@@ -118,7 +115,7 @@ Install latest version of npm
 
 **Adding User Profile**
 
-![](./public/images/readme/Add_Profile.png)
+![](./readme/Add_Profile.png)
 
 1. Log in to your account.
 2. Click 'Manage Profiles'.
@@ -130,7 +127,7 @@ Install latest version of npm
 
 **Editing User Profile**
 
-![](./public/images/readme/Edit_Profile.png)
+![](./readme/Edit_Profile.png)
 
 1. Log in to your account.
 2. Click 'Manage Profiles'.
@@ -139,7 +136,7 @@ Install latest version of npm
 
 **Deleting User Profile**
 
-![](./public/images/readme/Delete_Profile.png)
+![](./readme/Delete_Profile.png)
 
 1. Log in to your account.
 2. Click 'Manage Profiles'.
