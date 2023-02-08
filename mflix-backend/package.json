@@ -1,7 +1,7 @@
 {
-	"name": "roseflix-backend",
+	"name": "mflix-backend",
 	"version": "1.0.0",
-	"description": "Backend for Roseflix: A Netflix clone application",
+	"description": "Backend for Mflix: A Netflix clone application",
 	"main": "server.js",
 	"scripts": {
 		"build": "tsc --project ./",

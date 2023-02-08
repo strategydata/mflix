@@ -18,11 +18,11 @@ describe('<Accordion />', () => {
 		);
 
 		expect(getByText('Frequently Asked Questions')).toBeTruthy();
-		expect(getByText('What is Roseflix?')).toBeTruthy();
-		expect(getByText('How much does Roseflix cost?')).toBeTruthy();
+		expect(getByText('What is Mflix?')).toBeTruthy();
+		expect(getByText('How much does Mflix cost?')).toBeTruthy();
 		expect(getByText('Where can I watch?')).toBeTruthy();
 		expect(getByText('How do I cancel?')).toBeTruthy();
-		expect(getByText('What can I watch on Roseflix?')).toBeTruthy();
+		expect(getByText('What can I watch on Mflix?')).toBeTruthy();
 		expect(container.firstChild).toMatchSnapshot();
 	});
 
@@ -40,14 +40,14 @@ describe('<Accordion />', () => {
 		);
 
 		// TODO expect body to be toggled
-		// const whatIsRoseflixBodyText =
-		// 	"Roseflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more on thousands of internet-connected devices. You can watch as much as you want, whenever you want, without a single commercial – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!";
-		// const whatIsRoseflixHeaderEl = queryByText('What is Roseflix?');
-		// expect(queryByText(whatIsRoseflixBodyText)).toBeFalsy();
-		// if (whatIsRoseflixHeaderEl) fireEvent.click(whatIsRoseflixHeaderEl);
-		// expect(queryByText(whatIsRoseflixBodyText)).toBeTruthy();
-		// if (whatIsRoseflixHeaderEl) fireEvent.click(whatIsRoseflixHeaderEl);
-		// expect(queryByText(whatIsRoseflixBodyText)).toBeFalsy();
+		// const whatIsMflixBodyText =
+		// 	"Mflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more on thousands of internet-connected devices. You can watch as much as you want, whenever you want, without a single commercial – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!";
+		// const whatIsMflixHeaderEl = queryByText('What is Mflix?');
+		// expect(queryByText(whatIsMflixBodyText)).toBeFalsy();
+		// if (whatIsMflixHeaderEl) fireEvent.click(whatIsMflixHeaderEl);
+		// expect(queryByText(whatIsMflixBodyText)).toBeTruthy();
+		// if (whatIsMflixHeaderEl) fireEvent.click(whatIsMflixHeaderEl);
+		// expect(queryByText(whatIsMflixBodyText)).toBeFalsy();
 		expect(container.firstChild).toMatchSnapshot();
 	});
 });

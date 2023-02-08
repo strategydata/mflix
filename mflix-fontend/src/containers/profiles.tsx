@@ -37,7 +37,7 @@ function ProfilesContainer({ userDetails, setProfile }: ProfilesContainerType) {
 		mainHttp
 			.upsertProfile({ newProfile: editingUser })
 			.then(({ user }: any) => {
-				localStorage.setItem('roseflix-user', JSON.stringify(user));
+				localStorage.setItem('mflix-user', JSON.stringify(user));
 				setUserDetails(user);
 				setRender({ type: 'default', args: {} });
 			})
@@ -50,7 +50,7 @@ function ProfilesContainer({ userDetails, setProfile }: ProfilesContainerType) {
 		mainHttp
 			.deleteProfile({ profileId })
 			.then(({ user }: any) => {
-				localStorage.setItem('roseflix-user', JSON.stringify(user));
+				localStorage.setItem('mflix-user', JSON.stringify(user));
 				setUserDetails(user);
 				setRender({ type: 'default', args: {} });
 			})

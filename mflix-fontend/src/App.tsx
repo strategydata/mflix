@@ -4,7 +4,7 @@ import { ROUTES } from './constants/routes';
 import { UserContext } from './context/UserContext';
 
 function App() {
-	const userJSON = localStorage.getItem('roseflix-user');
+	const userJSON = localStorage.getItem('mflix-user');
 	const [ userDetails, setUserDetails ] = useState(userJSON !== null ? JSON.parse(userJSON) : null);
 
 	return (

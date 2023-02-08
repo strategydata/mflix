@@ -26,8 +26,8 @@ function Signin() {
 				.signin({ email, password })
 				.then(({ authorization, data }: any) => {
 					setIsLoading(false);
-					localStorage.setItem('roseflix-auth', authorization);
-					localStorage.setItem('roseflix-user', JSON.stringify(data.userDetails));
+					localStorage.setItem('mflix-auth', authorization);
+					localStorage.setItem('mflix-user', JSON.stringify(data.userDetails));
 					setUserDetails(data.userDetails);
 				})
 				.catch(({ response }) => {
@@ -91,7 +91,7 @@ function Signin() {
 					</Form.Button>
 				</Form.FormGroup>
 				<Form.Text>
-					New to Roseflix? <Form.Link to={ROUTES.SIGNUP.path}>Sign up now</Form.Link>.
+					New to Mflix? <Form.Link to={ROUTES.SIGNUP.path}>Sign up now</Form.Link>.
 				</Form.Text>
 				<Form.TextSmall>This page is protected by Google reCAPTCHA to ensure you're not a bot.</Form.TextSmall>
 			</Form>
